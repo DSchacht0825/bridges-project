@@ -166,20 +166,13 @@
 }
 
 @media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .section-subtitle {
-    font-size: 1rem;
-  }
-
   .about-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .about-content p {
     font-size: 1rem;
+    line-height: 1.7;
   }
 
   .value-item {
@@ -187,10 +180,42 @@
   }
 
   .value-icon {
-    font-size: 2rem;
+    width: 45px;
+    height: 45px;
+  }
+
+  .value-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .value-item h4 {
+    font-size: 1.2rem;
   }
 
   .image-wrapper img {
-    height: 300px;
+    height: 350px;
+  }
+
+  .about-highlight {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .value-item {
+    padding: 14px;
+  }
+
+  .image-wrapper img {
+    height: 280px;
+  }
+
+  .about-highlight {
+    padding: 20px;
   }
 }

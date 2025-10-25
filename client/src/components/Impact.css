@@ -116,14 +116,20 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .impact-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+}
+
+@media (max-width: 768px) {
+  .impact-background {
+    background-attachment: scroll;
+  }
 
   .impact-card {
-    padding: 30px 20px;
+    padding: 25px 15px;
   }
 
   .impact-icon {
@@ -131,11 +137,11 @@
   }
 
   .impact-number {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   .impact-label {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .impact-story {
@@ -153,10 +159,36 @@
   .impact-goals {
     grid-template-columns: 1fr;
   }
+
+  .goal-item {
+    padding: 15px;
+  }
 }
 
 @media (max-width: 480px) {
   .impact-grid {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .impact-card {
+    padding: 20px 15px;
+  }
+
+  .impact-number {
+    font-size: 2.5rem;
+  }
+
+  .impact-label {
+    font-size: 0.85rem;
+  }
+
+  .story-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .goal-item {
+    padding: 12px;
+    font-size: 0.9rem;
   }
 }
