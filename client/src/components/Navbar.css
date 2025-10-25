@@ -68,7 +68,7 @@
 }
 
 .navbar-cta-mobile {
-  display: none;
+  display: none !important;
 }
 
 .mobile-menu-toggle {
@@ -140,11 +140,11 @@
   }
 
   .navbar-cta-desktop {
-    display: none;
+    display: none !important;
   }
 
   .navbar-cta-mobile {
-    display: block;
+    display: block !important;
     margin-top: 10px;
     width: 100%;
     text-align: center;
