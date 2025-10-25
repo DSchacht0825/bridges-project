@@ -62,9 +62,13 @@
   color: var(--primary-color);
 }
 
-.navbar-cta {
+.navbar-cta-desktop {
   position: absolute;
   right: 20px;
+}
+
+.navbar-cta-mobile {
+  display: none;
 }
 
 .mobile-menu-toggle {
@@ -135,12 +139,15 @@
     border-bottom: none;
   }
 
-  .navbar-cta {
-    position: static;
-    margin-left: 0;
+  .navbar-cta-desktop {
+    display: none;
+  }
+
+  .navbar-cta-mobile {
+    display: block;
+    margin-top: 10px;
     width: 100%;
     text-align: center;
-    margin-top: 10px;
   }
 
   .mobile-menu-toggle span {

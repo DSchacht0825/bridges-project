@@ -16,6 +16,7 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
+    { name: 'Home', href: '#hero' },
     { name: 'About', href: '#about' },
     { name: 'Programs', href: '#programs' },
     { name: 'Impact', href: '#impact' },
@@ -43,9 +44,16 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
+          <a
+            href="#contact"
+            className="btn btn-primary navbar-cta-mobile"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Get Involved
+          </a>
         </div>
 
-        <a href="#contact" className="btn btn-primary navbar-cta">
+        <a href="#contact" className="btn btn-primary navbar-cta-desktop">
           Get Involved
         </a>
 
